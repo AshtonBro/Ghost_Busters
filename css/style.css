@@ -221,6 +221,7 @@ body {
 .tabs {
     display: flex;
     align-items: center;
+    margin-bottom: 60px;
 }
 
 .section-title {
@@ -235,4 +236,37 @@ body {
 .section-title.active {
     font-weight: 900;
     color: #363636;
+}
+
+.tabs-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-basis: 25%;
+    margin-bottom: 35px;
+}
+
+.card-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.name {
+    font-size: 16px;
+    line-height: 19px;
+    color: #5671F6;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.en-name {
+    color: #A5A5A5;
 }
