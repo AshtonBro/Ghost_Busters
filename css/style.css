@@ -91,7 +91,7 @@ body {
 .film {
     padding-top: 80px;
     padding-bottom: 80px;
-    border-bottom: 1px solid #D4D4D4;
+    border-bottom: 1px solid #d4d4d4;
 }
 
 .film-wrapper {
@@ -185,13 +185,13 @@ body {
     justify-content: center;
     height: 100px;
     width: 100px;
-    border: 1px solid #5671F6;
+    border: 1px solid #5671f6;
     border-radius: 10px;
     margin-right: 28px;
     font-weight: bold;
     font-size: 28px;
     line-height: 33px;
-    color: #5671F6;
+    color: #5671f6;
 }
 
 .rating-title {
@@ -228,7 +228,7 @@ body {
     font-weight: normal;
     font-size: 24px;
     line-height: 28px;
-    color: #A5A5A5;
+    color: #a5a5a5;
     margin-right: 30px;
     cursor: pointer;
 }
@@ -262,11 +262,49 @@ body {
 .name {
     font-size: 16px;
     line-height: 19px;
-    color: #5671F6;
+    color: #5671f6;
     margin-top: 0;
     margin-bottom: 6px;
 }
 
 .en-name {
-    color: #A5A5A5;
+    color: #a5a5a5;
+}
+
+.news {
+    padding-top: 70px;
+    padding-bottom: 100px;
+    background-color: #f3f3f3;
+}
+
+.section-news-title {
+    font-weight: 900;
+    color: #000000;
+    margin-bottom: 65px;
+}
+
+.news-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-card {
+    flex-basis: 23%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.news-date {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.news-titel {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-top: 14px;
 }
