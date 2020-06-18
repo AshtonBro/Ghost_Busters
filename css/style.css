@@ -93,6 +93,30 @@ body {
     background-color: #5671f6;
 }
 
+.m-menu-button {
+    padding: 5px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-line {
+    display: block;
+    width: 16px;
+    height: 1px;
+    background-color: #000000;
+    width: 16px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 40px;
+}
+
+.search-button {
+    background-color: #fff;
+    border: none;
+    padding: 5px;
+}
+
 .container {
     width: 1130px;
     margin: auto;
@@ -336,6 +360,11 @@ body {
     .sign-up {
         padding-left: 20px;
         padding-right: 20px;
+        width: 49%;
+    }
+
+    .login {
+        width: 49%;
     }
 
     .search-input {
@@ -343,7 +372,7 @@ body {
     }
 
     .navigation {
-        margin-right: 20px;
+        margin-right: 10px;
     }
 
     .navigation-link {
@@ -369,14 +398,20 @@ body {
         margin-right: auto;
     }
 
+    .button-group {
+        width: 100%;
+    }
+
     .sign-up {
         font-size: 16px;
+        width: 49%;
     }
 
     .login {
         font-size: 16px;
         padding-right: 40px;
         padding-left: 40px;
+        width: 49%;
     }
 
     .film-title {
@@ -442,7 +477,7 @@ body {
     }
 
     .film-description {
-        width: 500px;
+        width: 100%;
     }
 
     .cast {
@@ -453,5 +488,65 @@ body {
     .news {
         padding-top: 50px;
         padding-bottom: 70px;
+    }
+
+    .button-group {
+        width: 100%;
+    }
+
+    .login {
+        width: 49%;
+        font-size: 14px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .sign-up {
+        width: 49%;
+        font-size: 14px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .search-input {
+        padding-left: 20px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 95%;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .button-group {
+        display: none;
+    }
+
+    .search-input {
+        display: none;
+    }
+
+    .search-input:focus {
+        width: auto;
+    }
+
+    .film-trailer,
+    .poster {
+        width: 100%;
+    }
+
+    .film-text {
+        order: 1;
+        margin-bottom: 0;
+    }
+
+    .header {
+        padding-right: 2.5%;
+        padding-left: 2.5%;
     }
 }
