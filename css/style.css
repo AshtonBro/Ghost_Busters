@@ -15,6 +15,7 @@ body {
     height: 104.5px;
     padding-left: 34px;
     border: 1px solid #d4d4d4;
+    border-top: 0px;
 }
 
 .header-logo::after {
@@ -422,6 +423,15 @@ body {
         max-width: 560px;
     }
 
+    .header {
+        height: 80px;
+    }
+
+    .film {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
     .film-wrapper {
         flex-wrap: wrap;
     }
@@ -431,4 +441,17 @@ body {
         margin-bottom: 30px;
     }
 
+    .film-description {
+        width: 500px;
+    }
+
+    .cast {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+
+    .news {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
 }
