@@ -486,6 +486,7 @@ body {
         right: 0;
         top: 75px;
         bottom: 0;
+        height: calc(100% - 68px);
         background: #5671f6;
     }
 
