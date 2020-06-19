@@ -287,9 +287,15 @@ body {
 }
 
 .tabs-content {
-    display: flex;
+    display: none;
     align-items: center;
     flex-wrap: wrap;
+    visibility: hidden;
+}
+
+.tabs-content.visible {
+    display: flex;
+    visibility: visible;
 }
 
 .card {
@@ -358,6 +364,7 @@ body {
 }
 
 .button-next {
+    display: none;
     background-color: transparent;
     border: none;
     position: absolute;
@@ -535,6 +542,10 @@ body {
 
     .news-card {
         max-width: 90%;
+    }
+
+    .button-next {
+        display: block;
     }
 
     .mobile-buttons {

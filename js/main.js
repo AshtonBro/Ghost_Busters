@@ -1,11 +1,18 @@
-$(document).ready(function () {
-    const mMenuButton = $('.m-menu-button');
-    const mMneu = $('.m-menu');
+$(document).ready(() => {
+    const mMenuButton = $(".m-menu-button");
+    const mMneu = $(".m-menu");
+    const tab = $(".tab");
 
     mMenuButton.on('click', function () {
         mMneu.toggleClass('active');
         $('body').toggleClass('no-scroll')
     });
+
+    tab.on('click', function () {
+        tab.remove('active')
+        $(this).toggleClass('active');
+    });
+
     //initialize swiper when document ready
     var mySwiper = new Swiper('.swiper-container', {
         // Optional parameters
