@@ -9,8 +9,11 @@ $(document).ready(() => {
     });
 
     tab.on('click', function () {
-        tab.remove('active')
+        tab.removeClass('active')
         $(this).toggleClass('active');
+        const activeTabContante = $(this).attr('data-target');
+        $('.tabs-content').removeClass('visible');
+        $(activeTabContante).toggleClass('visible');
     });
 
     //initialize swiper when document ready

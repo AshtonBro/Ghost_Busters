@@ -298,6 +298,11 @@ body {
     visibility: visible;
 }
 
+.tab {
+    cursor: pointer;
+}
+
+
 .card {
     display: flex;
     align-items: center;
