@@ -21,7 +21,11 @@ $(document).ready(function () {
                 slidesPerView: 2,
             },
             320: {
-                slidesPerView: 1
+                slidesPerView: 1,
+                slidesOffsetAfter: 50,
+                navigation: {
+                    nextEl: ".button-next",
+                }
             },
         }
     })
