@@ -1,13 +1,9 @@
 $(document).ready(function () {
-    let tabsItem = $('.info-tabs__item');
+    const mMenuButton = $('.m-menu-button');
+    const mMneu = $('.m-menu');
 
-    tabsItem.on('click', function (event) {
-        event.preventDefault();
-        let activeContent = $(this).attr('href');
-        $('.visible').toggleClass('visible');
-        $(activeContent).toggleClass('visible');
-        $('.info-tabs__item-active').toggleClass('info-tabs__item-active');
-        $(this).toggleClass('info-tabs__item-active');
+    mMenuButton.on('click', function () {
+        mMneu.toggleClass('active');
+        $('body').toggleClass('no-scroll')
     });
-    
 });

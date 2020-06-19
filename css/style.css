@@ -8,6 +8,10 @@ body {
     color: #363636;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -473,16 +477,20 @@ body {
     }
 
     .m-menu {
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         position: fixed;
         left: 0;
         right: 0;
-        top: 0;
+        top: 75px;
         bottom: 0;
         background: #5671f6;
+    }
+
+    .m-menu.active {
+        display: flex;
     }
 
     .film {
@@ -514,7 +522,9 @@ body {
     }
 
     .mobile-buttons {
-        display: none;
+        display: block;
+        margin-left: auto;
+        margin-right: 15px;
     }
 
     .login {
@@ -527,6 +537,10 @@ body {
         font-size: 16px;
         padding-left: 5px;
         padding-right: 5px;
+        background-color: transparent;
+        color: #ffff;
+        border: none;
+        margin-bottom: 30px;
     }
 
     .search-input {
